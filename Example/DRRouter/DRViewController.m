@@ -26,6 +26,8 @@
     [self.view addSubview:button];
     [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
 
+    [DRRouter registerHost:@{@"to":@"TwoViewController"}];
+    
 }
 
 - (void)click {

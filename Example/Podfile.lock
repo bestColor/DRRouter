@@ -1,5 +1,5 @@
 PODS:
-  - DRRouter (0.0.1)
+  - DRRouter (0.0.2)
 
 DEPENDENCIES:
   - DRRouter (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DRRouter: 6ae91b855c174350b17bebdc5b5a7b31506dd382
+  DRRouter: 55f67f7ff05841d73f5de4606f99d3a3720388b8
 
 PODFILE CHECKSUM: 0183531764e787ccfd6b13afe9abcd882c5ca679
 

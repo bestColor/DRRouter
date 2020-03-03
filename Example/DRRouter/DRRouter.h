@@ -3,6 +3,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DRRouter : NSObject
+/** 注册组件之间跳转 Map
+    @param hostKeyValue e.g. @{@"login":@"LoginViewController"}
+ */
++ (void)registerHost:(NSDictionary *)hostKeyValue;
+
 /** 本类只用于组件之间的跳转。       -   组件回调机制暂时用通知来处理。（例如登录成功后的回调给调用他的界面）
    URL协议
    e.g. push://viewControllerKey?key1=valu1&key2=valu2

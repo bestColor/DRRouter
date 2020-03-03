@@ -10,12 +10,13 @@
 @end
 
 @implementation DRRouter
-/** 组件之间跳转 Map */
-- (NSDictionary *)routerMap {
-    return @{
-        @"login":@"LoginViewController",//登录界面
-        @"to":@"TwoViewController",
-    };
+/** 注册组件之间跳转 Map */
++ (void)registerHost:(NSDictionary *)hostKeyValue {
+    [[self sharedInstance] registerHostKeyValue:hostKeyValue];
+}
+
+- (void)registerHostKeyValue:(NSDictionary *)hostKeyValue {
+    self.routerMap = hostKeyValue;
 }
 
 + (instancetype)sharedInstance

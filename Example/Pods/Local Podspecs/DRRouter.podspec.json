@@ -1,8 +1,8 @@
 {
   "name": "DRRouter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "DR的路由，只用于组件之间的跳转",
-  "description": "DR的中间件路由，只用于组件之间的跳转.",
+  "description": "DR的中间件路由，只用于组件之间的跳转, 增加了注册组件hostKeyValue.",
   "homepage": "https://www.baidu.com",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/bestColor/DRRouter.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"
