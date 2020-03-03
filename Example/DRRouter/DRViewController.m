@@ -7,6 +7,7 @@
 //
 
 #import "DRViewController.h"
+#import "DRRouter.h"
 
 @interface DRViewController ()
 
@@ -17,7 +18,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(100, 100, 100, 64);
+    [button setTitle:@"send" forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor blackColor]];
+    [self.view addSubview:button];
+    [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+
+}
+
+- (void)click {
+    [DRRouter router:@"present://to?text=abc&textId=13"];
 }
 
 - (void)didReceiveMemoryWarning
