@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DRRouter'
-  s.version          = '4.0.0'
+  s.version          = '4.0.1'
   s.summary          = 'DR的路由，只用于组件之间的跳转'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ DR的中间件路由，只用于组件之间的跳转, 增加了注册组件host
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DRRouter/4.0.0/**/*'
+  s.source_files = 'DRRouter/4.0.1/**/*'
   
   # s.resource_bundles = {
   #   'DRRouter' => ['DRRouter/Assets/*.png']

@@ -1,6 +1,6 @@
 {
   "name": "DRRouter",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "summary": "DR的路由，只用于组件之间的跳转",
   "description": "DR的中间件路由，只用于组件之间的跳转, 增加了注册组件hostKeyValue, 增加了runtime消息发送模块.",
   "homepage": "https://www.baidu.com",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/bestColor/DRRouter.git",
-    "tag": "4.0.0"
+    "tag": "4.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DRRouter/4.0.0/**/*",
+  "source_files": "DRRouter/4.0.1/**/*",
   "frameworks": [
     "Foundation",
     "UIKit"
