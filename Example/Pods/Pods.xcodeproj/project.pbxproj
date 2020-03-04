@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		11D7BD35CE7084FEF4AE88779DDBBC70 /* Pods-DRRouter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8928DAB7176536AAE5CA0C6089975ACB /* Pods-DRRouter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1414F87C96D653168374238227CF746F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4FC1AF1F105B8259B6391F751332EABE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		528CFCF6DBDDC1B30E6243D89F257667 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3C93291881F8B75AB741ED8BB58AB416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		3F74EB1A274DD5ECA8671470CF4DF0B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		4B4A164742CC6933821F8AB27405CD57 /* DRRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C2046C3C6562EA3993512A0B5159B /* DRRouter-dummy.m */; };
+		4FC1AF1F105B8259B6391F751332EABE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		528CFCF6DBDDC1B30E6243D89F257667 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		8A84CF81A6E38E4507390CAC8CD6EE96 /* Pods-DRRouter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A58E19BAC8C083640F1F525158A3FF /* Pods-DRRouter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9354478B3F94B89C33C29C6D4018BC6 /* Pods-DRRouter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0FCA1E9DE193D97FEE65194064E366 /* Pods-DRRouter_Tests-dummy.m */; };
 		AF4763EF74010556359E765CA2962B75 /* Pods-DRRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A27F21C3381BCFC4E47533971775D2 /* Pods-DRRouter_Example-dummy.m */; };
-		D550FF047C3F196DF713DA1CFDC5237C /* DRRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9598B06AA7E9074432D314ACF22D88 /* DRRouter-dummy.m */; };
-		E5DA21721C82DC29DE9BE8D7F83CE65C /* DRRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C968262737D927ED9F8B9E0703B550 /* DRRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6EC4D08E4F0C35351F21E2F33131B20 /* DRRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F34D1ABD6A4309D6A38F72D2F103A0FE /* DRRouter.m */; };
-		FA74921970C3DBE44EFC95590EF26D9C /* DRRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4720E880B8FC664BF9CA0141BA31E49F /* DRRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5AA12288BD008AB6AB99744885D6768 /* DRRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 26CD99889D0B549AC6499C98C65B861C /* DRRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F049698CF723B487FB8BFEDFCF357E1B /* DRRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 278C11876798097CD1139EDD8EA88F35 /* DRRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC66624083078DAF5159464669781F6E /* DRRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B195F41840A188F8985448B273FC6A70 /* DRRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,51 +39,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		049AC1F4BC82AA5774B880FDF7446A6B /* DRRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DRRouter.release.xcconfig; sourceTree = "<group>"; };
 		0A538C9EC8FC863A83132883A9E7211B /* DRRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DRRouter.framework; path = DRRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5C2046C3C6562EA3993512A0B5159B /* DRRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DRRouter-dummy.m"; sourceTree = "<group>"; };
 		0EE16D0B3004F2EBB7B7C32115DB5FC4 /* Pods-DRRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DRRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1C9598B06AA7E9074432D314ACF22D88 /* DRRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DRRouter-dummy.m"; sourceTree = "<group>"; };
 		221F46AB864A8485B1BA262FE9C583F5 /* Pods-DRRouter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DRRouter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		26CD99889D0B549AC6499C98C65B861C /* DRRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRRouter.h; path = DRRouter/4.0.0/DRRouter.h; sourceTree = "<group>"; };
+		278C11876798097CD1139EDD8EA88F35 /* DRRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DRRouter-umbrella.h"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3149A0C0EEFAF5170E33EC6EB105D324 /* Pods-DRRouter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DRRouter_Example.modulemap"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		33C968262737D927ED9F8B9E0703B550 /* DRRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DRRouter.h; path = DRRouter/3.0/DRRouter.h; sourceTree = "<group>"; };
-		3DF24F5B2C421B7744C62A41B1BE965F /* DRRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DRRouter.debug.xcconfig; sourceTree = "<group>"; };
-		452561F69FD5344B8D49D758800CAF68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4720E880B8FC664BF9CA0141BA31E49F /* DRRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DRRouter-umbrella.h"; sourceTree = "<group>"; };
-		4E6A7368E66A17B77BB5C4B739940AA3 /* DRRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DRRouter-prefix.pch"; sourceTree = "<group>"; };
-		578500A03415F316C7DC4C97182167D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		390304757A02464A49B7B043EE206E38 /* DRRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DRRouter.debug.xcconfig; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		59A58E19BAC8C083640F1F525158A3FF /* Pods-DRRouter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DRRouter_Example-umbrella.h"; sourceTree = "<group>"; };
 		5A0FCA1E9DE193D97FEE65194064E366 /* Pods-DRRouter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DRRouter_Tests-dummy.m"; sourceTree = "<group>"; };
 		60A27F21C3381BCFC4E47533971775D2 /* Pods-DRRouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DRRouter_Example-dummy.m"; sourceTree = "<group>"; };
 		62BB422E5A0B60C603F6A6FA26B9AFE0 /* Pods_DRRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DRRouter_Tests.framework; path = "Pods-DRRouter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6969F875A698C5104AC6832FB2C20F89 /* DRRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DRRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		700A043389DEFBB80DF653F785CBC168 /* Pods-DRRouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DRRouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		71BBF544786EA251DB099A931F58E535 /* Pods-DRRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DRRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7866F1E2E927EFE2F4F83EEDA318029B /* Pods-DRRouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DRRouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7B2496EE339612AE002E8924578821D2 /* Pods-DRRouter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DRRouter_Example-Info.plist"; sourceTree = "<group>"; };
-		86D939AF4365396CC6189EE830FD2703 /* DRRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DRRouter.modulemap; sourceTree = "<group>"; };
+		8337C27B5CE26FB2AB36086EDD8A16F4 /* DRRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DRRouter-Info.plist"; sourceTree = "<group>"; };
+		843E39E92BBF365D2232F873A2F1FCA0 /* DRRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DRRouter.modulemap; sourceTree = "<group>"; };
 		8928DAB7176536AAE5CA0C6089975ACB /* Pods-DRRouter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DRRouter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E4C1D5707D68945E7C4C73624C77273 /* DRRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DRRouter-Info.plist"; sourceTree = "<group>"; };
 		A5EAABB762752F1911E3231A68D64D75 /* Pods-DRRouter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DRRouter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B195F41840A188F8985448B273FC6A70 /* DRRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRRouter.m; path = DRRouter/4.0.0/DRRouter.m; sourceTree = "<group>"; };
+		C17741E6171BA2D916AAD23D4E4C17AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C69F64093643F01B6FCDEF6FD0F37852 /* Pods-DRRouter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DRRouter_Tests-Info.plist"; sourceTree = "<group>"; };
 		CED657C7F2A9F1BC47F26CFACBB08DA8 /* Pods-DRRouter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DRRouter_Tests.modulemap"; sourceTree = "<group>"; };
-		EBCC2E2A565DB1F53E47C2A7DCB3DB1C /* DRRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DRRouter.release.xcconfig; sourceTree = "<group>"; };
-		EE2CF5792CC5B4C6D0A13C796A62DE28 /* DRRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DRRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EA8A3F3D87A98372225FC128710F0201 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		EE344637EC0DE68CBE349E5C6F4B241E /* Pods_DRRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DRRouter_Example.framework; path = "Pods-DRRouter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AEEEF1128010524B1F91B1DC767C4C /* Pods-DRRouter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DRRouter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F34D1ABD6A4309D6A38F72D2F103A0FE /* DRRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DRRouter.m; path = DRRouter/3.0/DRRouter.m; sourceTree = "<group>"; };
 		F43D3F21E32EE38989A7FDA6CE0A3A4A /* Pods-DRRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DRRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC13AE90EBCA7F90DE8A078C3C9D6C7 /* Pods-DRRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DRRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FE380203B4B284E13FA43189B7D05191 /* DRRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DRRouter-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0626BE41139EB656677352E32A7D8AE2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1414F87C96D653168374238227CF746F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0DB54FF717F45FAF2EA46024EC121F6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,28 +93,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C28A1876E24432079ABED48E1869C190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C93291881F8B75AB741ED8BB58AB416 /* Foundation.framework in Frameworks */,
+				3F74EB1A274DD5ECA8671470CF4DF0B6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C57A5147AB5F21D96D47473E2C2E127 /* Support Files */ = {
+		15162B1A2AD8D65870F1B8D3CDF007AB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				86D939AF4365396CC6189EE830FD2703 /* DRRouter.modulemap */,
-				1C9598B06AA7E9074432D314ACF22D88 /* DRRouter-dummy.m */,
-				9E4C1D5707D68945E7C4C73624C77273 /* DRRouter-Info.plist */,
-				4E6A7368E66A17B77BB5C4B739940AA3 /* DRRouter-prefix.pch */,
-				4720E880B8FC664BF9CA0141BA31E49F /* DRRouter-umbrella.h */,
-				3DF24F5B2C421B7744C62A41B1BE965F /* DRRouter.debug.xcconfig */,
-				EBCC2E2A565DB1F53E47C2A7DCB3DB1C /* DRRouter.release.xcconfig */,
+				6969F875A698C5104AC6832FB2C20F89 /* DRRouter.podspec */,
+				C17741E6171BA2D916AAD23D4E4C17AD /* LICENSE */,
+				EA8A3F3D87A98372225FC128710F0201 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		154D52CE23C87142EBFDB3C698A65424 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				843E39E92BBF365D2232F873A2F1FCA0 /* DRRouter.modulemap */,
+				0A5C2046C3C6562EA3993512A0B5159B /* DRRouter-dummy.m */,
+				8337C27B5CE26FB2AB36086EDD8A16F4 /* DRRouter-Info.plist */,
+				FE380203B4B284E13FA43189B7D05191 /* DRRouter-prefix.pch */,
+				278C11876798097CD1139EDD8EA88F35 /* DRRouter-umbrella.h */,
+				390304757A02464A49B7B043EE206E38 /* DRRouter.debug.xcconfig */,
+				049AC1F4BC82AA5774B880FDF7446A6B /* DRRouter.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/DRRouter";
 			sourceTree = "<group>";
 		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70EAB503B1739760ACC72CB5556B162F /* DRRouter */ = {
+			isa = PBXGroup;
+			children = (
+				26CD99889D0B549AC6499C98C65B861C /* DRRouter.h */,
+				B195F41840A188F8985448B273FC6A70 /* DRRouter.m */,
+				15162B1A2AD8D65870F1B8D3CDF007AB /* Pod */,
+				154D52CE23C87142EBFDB3C698A65424 /* Support Files */,
+			);
+			name = DRRouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		7542C927F060B8A6A935076B37DF1008 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C94695FDB1515F1756D5EEFC17523029 /* DRRouter */,
+				70EAB503B1739760ACC72CB5556B162F /* DRRouter */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -133,14 +166,6 @@
 				62BB422E5A0B60C603F6A6FA26B9AFE0 /* Pods_DRRouter_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		C12A63C90BABFDDEEAE51A401DDAE8C0 /* Pods-DRRouter_Tests */ = {
@@ -159,45 +184,24 @@
 			path = "Target Support Files/Pods-DRRouter_Tests";
 			sourceTree = "<group>";
 		};
-		C94695FDB1515F1756D5EEFC17523029 /* DRRouter */ = {
-			isa = PBXGroup;
-			children = (
-				33C968262737D927ED9F8B9E0703B550 /* DRRouter.h */,
-				F34D1ABD6A4309D6A38F72D2F103A0FE /* DRRouter.m */,
-				D73BE9FCB4E461AA1AE80A3926E50D8D /* Pod */,
-				0C57A5147AB5F21D96D47473E2C2E127 /* Support Files */,
-			);
-			name = DRRouter;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				7542C927F060B8A6A935076B37DF1008 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				BC67A5D263BB788416E296AD527A8C16 /* Products */,
 				FDF8CC5F8E2D944D6D1F313444F29BD1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D73BE9FCB4E461AA1AE80A3926E50D8D /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				EE2CF5792CC5B4C6D0A13C796A62DE28 /* DRRouter.podspec */,
-				578500A03415F316C7DC4C97182167D4 /* LICENSE */,
-				452561F69FD5344B8D49D758800CAF68 /* README.md */,
-			);
-			name = Pod;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		F4EA1EF5D787B796D8AFCFDFE003D916 /* Pods-DRRouter_Example */ = {
@@ -245,12 +249,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C52D6E8449C67F9BDE2D4A9A172EF454 /* Headers */ = {
+		6098064120581F062D197C5B2DC5A90D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA74921970C3DBE44EFC95590EF26D9C /* DRRouter-umbrella.h in Headers */,
-				E5DA21721C82DC29DE9BE8D7F83CE65C /* DRRouter.h in Headers */,
+				F049698CF723B487FB8BFEDFCF357E1B /* DRRouter-umbrella.h in Headers */,
+				E5AA12288BD008AB6AB99744885D6768 /* DRRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +282,12 @@
 		};
 		E8B56C2EAEA80674F8F0B703530AE3E2 /* DRRouter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A195B304FAF7E1313E47AFE91CBF1926 /* Build configuration list for PBXNativeTarget "DRRouter" */;
+			buildConfigurationList = 5DA0869E46259A8B45FAD64F707030FD /* Build configuration list for PBXNativeTarget "DRRouter" */;
 			buildPhases = (
-				C52D6E8449C67F9BDE2D4A9A172EF454 /* Headers */,
-				8C484A0091D13AA1EAFA195CAE0FCB93 /* Sources */,
-				0626BE41139EB656677352E32A7D8AE2 /* Frameworks */,
-				23654CFACAEC64586F1B8CF6312AFC8E /* Resources */,
+				6098064120581F062D197C5B2DC5A90D /* Headers */,
+				E44AA43FE72E94B1B6CEA2972BE442AB /* Sources */,
+				C28A1876E24432079ABED48E1869C190 /* Frameworks */,
+				CCDC9ED3DF384669E77CCDBFA85E4D70 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -343,14 +347,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		23654CFACAEC64586F1B8CF6312AFC8E /* Resources */ = {
+		871B67C9655491C4577FD822C33DC098 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		871B67C9655491C4577FD822C33DC098 /* Resources */ = {
+		CCDC9ED3DF384669E77CCDBFA85E4D70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,20 +379,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C484A0091D13AA1EAFA195CAE0FCB93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D550FF047C3F196DF713DA1CFDC5237C /* DRRouter-dummy.m in Sources */,
-				F6EC4D08E4F0C35351F21E2F33131B20 /* DRRouter.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AE6272758BA2F172305014619E391532 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9354478B3F94B89C33C29C6D4018BC6 /* Pods-DRRouter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44AA43FE72E94B1B6CEA2972BE442AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B4A164742CC6933821F8AB27405CD57 /* DRRouter-dummy.m in Sources */,
+				FC66624083078DAF5159464669781F6E /* DRRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +446,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		4314AEA692072EEAEA3C725C20DDE160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049AC1F4BC82AA5774B880FDF7446A6B /* DRRouter.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DRRouter/DRRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DRRouter/DRRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DRRouter/DRRouter.modulemap";
+				PRODUCT_MODULE_NAME = DRRouter;
+				PRODUCT_NAME = DRRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -502,37 +538,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		5EB5B15896033AA2C2779B9B8FF01F98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF24F5B2C421B7744C62A41B1BE965F /* DRRouter.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DRRouter/DRRouter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DRRouter/DRRouter-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DRRouter/DRRouter.modulemap";
-				PRODUCT_MODULE_NAME = DRRouter;
-				PRODUCT_NAME = DRRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		68CC586C782C6D8B1A5ADF15EF173A5E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -631,38 +636,6 @@
 			};
 			name = Debug;
 		};
-		8796BC7DFED15488787A84349F24F9C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBCC2E2A565DB1F53E47C2A7DCB3DB1C /* DRRouter.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DRRouter/DRRouter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DRRouter/DRRouter-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DRRouter/DRRouter.modulemap";
-				PRODUCT_MODULE_NAME = DRRouter;
-				PRODUCT_NAME = DRRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A45EAB8407298B3D599154F70757F418 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 71BBF544786EA251DB099A931F58E535 /* Pods-DRRouter_Tests.release.xcconfig */;
@@ -731,6 +704,37 @@
 			};
 			name = Release;
 		};
+		F88D0944254BCEB7D561531620AA866D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390304757A02464A49B7B043EE206E38 /* DRRouter.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DRRouter/DRRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DRRouter/DRRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DRRouter/DRRouter.modulemap";
+				PRODUCT_MODULE_NAME = DRRouter;
+				PRODUCT_NAME = DRRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -743,20 +747,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5DA0869E46259A8B45FAD64F707030FD /* Build configuration list for PBXNativeTarget "DRRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88D0944254BCEB7D561531620AA866D /* Debug */,
+				4314AEA692072EEAEA3C725C20DDE160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		975DAFDC333381FE7EEAC23C53B23599 /* Build configuration list for PBXNativeTarget "Pods-DRRouter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F8B37178346E581EBF3FA3155E0F31E /* Debug */,
 				C86B788B6DCC34F16B39B85F3D418D83 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A195B304FAF7E1313E47AFE91CBF1926 /* Build configuration list for PBXNativeTarget "DRRouter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5EB5B15896033AA2C2779B9B8FF01F98 /* Debug */,
-				8796BC7DFED15488787A84349F24F9C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
