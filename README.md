@@ -22,12 +22,17 @@ pod 'DRRouter'
 ## E.g.
 
 [DRRouter registerHost:@{@"two":@"TwoViewController"}];
+
 UIViewController *vc = [DRRouter router:@"path://two?text=abc&textId=13"];
+
 [vc setValue:[UIImage imageNamed:@"LanchImagebg01"] forKey:@"aa"];
+
 [self presentViewController:vc animated:YES completion:nil];
 
 [DRRouter sendMessage:vc action:@"abc" param:nil];
+
 [DRRouter sendMessage:vc action:@"abc:" param:@"哈哈"];
+
 [DRRouter sendMessage:vc action:@"abc" param:@"嘿嘿"];
 ## Author
 
