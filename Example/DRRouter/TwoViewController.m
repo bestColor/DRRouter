@@ -11,6 +11,7 @@
 @interface TwoViewController ()
 @property (nonatomic, copy)NSString *text;
 @property (nonatomic, copy)NSString *textId;
+@property (nonatomic, strong)UIImage *aa;
 @end
 
 @implementation TwoViewController
@@ -21,6 +22,21 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     NSLog(@"text = %@, textId = %@",self.text,self.textId);
+    
+    UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 300, UIScreen.mainScreen.bounds.size.width, 300)];
+    iv.image = self.aa;
+    [self.view addSubview:iv];
+    
+    
+    
+}
+
+- (void)abc:(NSString *)text {
+    NSLog(@"执行了abc,带一个参数 - %@", text);
+}
+
+-  (void)abc {
+    NSLog(@"执行了abc，不带参数");
 }
 
 /*

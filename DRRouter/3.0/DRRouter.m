@@ -1,5 +1,6 @@
 #import "DRRouter.h"
 #import <objc/runtime.h>
+#import "objc/message.h"
 
 @interface DRRouter()
 
@@ -16,11 +17,16 @@
 }
 
 - (void)registerHostKeyValue:(NSDictionary *)hostKeyValue {
-    self.routerMap = hostKeyValue;
+    if (self.routerMap == nil) {
+        self.routerMap = hostKeyValue;
+    } else {
+        NSMutableDictionary *endRouterMap = self.routerMap.mutableCopy;
+        [endRouterMap addEntriesFromDictionary:hostKeyValue];
+        self.routerMap = endRouterMap;
+    }
 }
 
-+ (instancetype)sharedInstance
-{
++ (instancetype)sharedInstance {
     static DRRouter *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -29,40 +35,53 @@
     return instance;
 }
 
-+ (void)router:(NSString *)URL {
-    [[DRRouter sharedInstance] pathComponentsFromURL:URL];
-
++ (UIViewController *)router:(NSString *)URL {
+    return [[DRRouter sharedInstance] pathComponentsFromURL:URL];
 }
 
-- (void)pathComponentsFromURL:(NSString *)URL {
++ (void)sendMessage:(id)target action:(NSString *)action param:(NSString * _Nullable)param {
+    if (param.length) {
+        NSString *newAction = action;
+        if ([action hasSuffix:@":"] == false) {
+            newAction = [NSString stringWithFormat:@"%@:",action];
+        }
+        ((void (*)(id, SEL, NSString *))objc_msgSend)(target, NSSelectorFromString(newAction), param);
+    } else {
+        ((void (*)(id, SEL))objc_msgSend)(target, NSSelectorFromString(action));
+    }
+}
+
+- (UIViewController *)pathComponentsFromURL:(NSString *)URL {
     if (!URL) {
-        NSAssert(1, @"URL协议为空，解析失败");
-        return;
+        NSAssert(0, @"URL协议为空，解析失败");
+        return [UIViewController new];
     }
     
     NSArray *protocols = [self pathSehments:URL];
     NSString *protocol = [protocols objectAtIndex:0];
+    
+    NSLog(@"scheme协议 = %@ - %@", protocol, [protocol isEqualToString:@"ylh"] ? @"外部app唤醒" : @"组件间调用");
+    
     NSString *host = [protocols objectAtIndex:1];
     
     UIViewController *toVC = [self getViewControllerFromHost:host];
     [self paramVC:toVC paramenters:[self queryItems:URL]];
-        
-    if ([protocol isEqualToString:@"push"]) {
-        [self pushViewController:toVC];
-    } else if ([protocol isEqualToString:@"present"]) {
-        [self presentViewController:toVC];
-    } else {
-        NSAssert(1, @"URL协议错误，暂只支持push和present协议");
-    }
+    
+    return toVC;
 }
 
 - (UIViewController *)getViewControllerFromHost:(NSString *)host {
     if (host.length <= 0) {
+        NSAssert(0, @"host的key为空");
         return [UIViewController new];
     }
     
     Class aClass = NSClassFromString(self.routerMap[host]);
-    if (aClass) return [[aClass alloc] init];
+    if (aClass) {
+        return [[aClass alloc] init];
+    } else {
+        NSAssert(0, @"该host的key未注册,请先调用注册函数并且设置keyValue");
+    }
     
     aClass = NSClassFromString(host);
     if (aClass) return [[aClass alloc] init];
@@ -118,60 +137,6 @@
             [vc setValue:param forKey:key];
         }
     }
-}
-
-#pragma - 跳转方法
-- (void)pushViewController:(UIViewController *)viewController  {
-    [[self getCurrentVC].navigationController pushViewController:viewController animated:YES];
-}
-
-- (void)presentViewController:(UIViewController *)viewController {
-    viewController.modalPresentationStyle = UIModalPresentationFullScreen;
-    [[self getCurrentVC] presentViewController:viewController animated:YES completion:^{
-        
-    }];
-}
-
-- (UIViewController *)getCurrentVC {
-    //1. 先找到KeyWindow
-    UIWindow * window = [[UIApplication sharedApplication] keyWindow];
-    //2. 正常情况下KeyWindow应该是在UIWindowLevelNormal,有Alert的时候KeyWindow就是Alert框
-    if (window.windowLevel != UIWindowLevelNormal)
-    {
-        //3. 如果不是UIWindowLevelNormal,那么找到UIWindowLevelNormal级别的Window
-        // 这里有个缺陷,因为UIWindowLevelNormal的不一定只有一个,虽然正常情况下只有一个
-        NSArray *windows = [[UIApplication sharedApplication] windows];
-        for(UIWindow * tmpWin in windows)
-        {
-            if (tmpWin.windowLevel == UIWindowLevelNormal)
-            {
-                //找到了UIWindowLevelNormal的Window
-                window = tmpWin;
-                break;
-            }
-        }
-    }
-    //4. 判断RootViewController不是TabBarVC和NaviVC,且是ViewController
-    id result = window.rootViewController;
-    BOOL isViewController = ![result isKindOfClass:[UITabBarController class]] && ![result isKindOfClass:[UINavigationController class]] && [result isKindOfClass:[UIViewController class]];
-    //5. 进入递归循环,排除TabBarVC和NaviVC,以及进入PresentedVC继续递归
-    while (!isViewController) {
-        while ([result isKindOfClass:[UITabBarController class]]) {
-            UITabBarController *tempVC = result;
-            result = [tempVC selectedViewController];
-        }
-        while ([result isKindOfClass:[UINavigationController class]]) {
-            UINavigationController *tempVC = result;
-            result = [tempVC.viewControllers lastObject];
-        }
-        id presentedVC = [result presentedViewController];
-        if (presentedVC) {
-            result = presentedVC;
-        }
-        isViewController = ![result isKindOfClass:[UITabBarController class]] && ![result isKindOfClass:[UINavigationController class]] && [result isKindOfClass:[UIViewController class]];
-    }
-
-    return result;
 }
 
 @end

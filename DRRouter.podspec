@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DRRouter'
-  s.version          = '2.0.0'
+  s.version          = '3.0.0'
   s.summary          = 'DR的路由，只用于组件之间的跳转'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-DR的中间件路由，只用于组件之间的跳转, 增加了注册组件hostKeyValue.
+DR的中间件路由，只用于组件之间的跳转, 增加了注册组件hostKeyValue, 增加了runtime消息发送模块.
                        DESC
 
   s.homepage         = 'https://www.baidu.com'
@@ -30,7 +30,7 @@ DR的中间件路由，只用于组件之间的跳转, 增加了注册组件host
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DRRouter/2.0/**/*'
+  s.source_files = 'DRRouter/3.0/**/*'
   
   # s.resource_bundles = {
   #   'DRRouter' => ['DRRouter/Assets/*.png']

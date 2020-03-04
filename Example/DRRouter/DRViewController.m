@@ -24,14 +24,19 @@
     [button setTitle:@"send" forState:UIControlStateNormal];
     [button setBackgroundColor:[UIColor blackColor]];
     [self.view addSubview:button];
-    [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
-
-    [DRRouter registerHost:@{@"to":@"TwoViewController"}];
+    [button addTarget:self action:@selector(testEg) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
-- (void)click {
-    [DRRouter router:@"present://to?text=abc&textId=13"];
+- (void)testEg {
+    [DRRouter registerHost:@{@"two":@"TwoViewController"}];
+    UIViewController *vc = [DRRouter router:@"path://two?text=abc&textId=13"];
+    [vc setValue:[UIImage imageNamed:@"LanchImagebg01"] forKey:@"aa"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    [DRRouter sendMessage:vc action:@"abc" param:nil];
+    [DRRouter sendMessage:vc action:@"abc:" param:@"哈哈"];
+    [DRRouter sendMessage:vc action:@"abc" param:@"嘿嘿"];
 }
 
 - (void)didReceiveMemoryWarning
